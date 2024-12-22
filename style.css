@@ -1,7 +1,31 @@
 .picture-of-me {
     transition: box-shadow 0.3s ease;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
 }
 
 .picture-of-me:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.picture-of-me:active {
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+}
+
+h2 {
+    margin-bottom: 0;
+}
+
+p {
+    margin-top: 0;
+}
+
+ul {
+    margin-top: 0;
+}
+
+.job-title {
+    margin-bottom: 0;
 }
