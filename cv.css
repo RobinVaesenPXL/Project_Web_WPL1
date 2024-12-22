@@ -1,21 +1,106 @@
-body {
+* {
+    box-sizing: border-box;
     margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
     font-family: sans-serif;
-    background-color: darkgray;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
 }
 
 main {
     width: 1000px;
     margin: 0 auto;
     padding: 10px 50px 100px 50px;
+    background: linear-gradient(#0ffbff, #6e2fff);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    height: 80px;
+    width: 600px;
+    background-color: white;
+    border-radius: 1em;
+    padding: 30px;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+.card.open {
+    margin-top: -4px;
+    margin-left: -4px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
+}
+
+.card.one.open {
+    height: 200px;
+}
+
+.card.two.open {
+    height: 150px;
+}
+
+.card.three.open {
+    height: 480px;
+}
+
+.card.four.open {
+    height: 200px;
+}
+
+.card.five.open {
+    height: 280px;
+}
+
+.card-title {
+    text-align: left;
+}
+
+.card-text {
+    display: none;
+    text-align: left;
+    margin: 20px 0 0 0;
+}
+
+.card.open .card-text {
+    display: block;
+}
+
+.card-toggle {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 26px;
+    right: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    height: 30px;
+    width: 30px;
+    background-color: #6e2fff;
+    border: none;
     color: white;
-    background-color: rgb(121, 119, 131);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s ease;
 }
 
 .picture-of-me {
-    transition: box-shadow 0.3s ease;
+    transition: 0.3s ease;
     border: 2px solid transparent;
-    transition: border-color 0.3s ease;
+    cursor: pointer;
 }
 
 .picture-of-me:hover {
@@ -29,18 +114,19 @@ main {
 }
 
 h2 {
-    margin-top: 35px;
-    margin-bottom: 0;
+    color: white;
+    font-size: 48px;
+    margin-top: 50px;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-p, ul, ol {
-    margin-top: 0;
+hr {
+    display: none;
+    margin-top: 20px;
 }
 
-
-
-.job-title {
-    margin-bottom: 0;
+.card.open hr {
+    display: block;
 }
 
 table {
@@ -59,18 +145,27 @@ table {
     background-color: #dddddd;
   }
 
+  li {
+    margin-left: 30px;
+  }
+
+  .job-description {
+    margin-left: 60px;
+  }
+
 .footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
+    left: 0;
     bottom: 0;
     right: 0;
-    width: calc(100% - 30px);
+    width: 100%;
     padding: 10px 20px;
-    background-color: rgb(121, 119, 131);
-    color: white;
-    border-top: 1px solid darkgray;
+    font-weight: bold;
+    background-color: lightgrey;
+    border-top: 2px solid #6e2fff;
     z-index: 1000;
 }
 
@@ -89,14 +184,15 @@ table {
 .footer-button {
     margin: 0;
     padding: 5px 15px;
-    background-color: #6c4280;
+    background-color: #6e2fff;
     color: white;
+    font-weight: bold;
     border: none;
     border-radius: 3px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: 0.3s ease;
 }
 
 .footer-button:hover {
-    background-color: #362140;
+    background-color: #6c4280;
 }
