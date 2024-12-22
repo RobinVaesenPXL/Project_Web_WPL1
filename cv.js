@@ -10,3 +10,4 @@ cardToggles.forEach((button) => {
         button.parentNode.classList.toggle("open");
     })
 })
+ 
