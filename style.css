@@ -31,11 +31,7 @@ h2 {
     margin-bottom: 0;
 }
 
-p {
-    margin-top: 0;
-}
-
-ul {
+p, ul, ol {
     margin-top: 0;
 }
 
