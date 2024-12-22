@@ -7,7 +7,7 @@ body {
 main {
     width: 1000px;
     margin: 0 auto;
-    padding: 10px 50px 10px 50px;
+    padding: 10px 50px 100px 50px;
     color: white;
     background-color: rgb(121, 119, 131);
 }
@@ -29,6 +29,7 @@ main {
 }
 
 h2 {
+    margin-top: 35px;
     margin-bottom: 0;
 }
 
@@ -62,11 +63,15 @@ table {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: calc(100% - 30px);
     padding: 10px 20px;
     background-color: rgb(121, 119, 131);
     color: white;
     border-top: 1px solid darkgray;
+    z-index: 1000;
 }
 
 .footer-left {
