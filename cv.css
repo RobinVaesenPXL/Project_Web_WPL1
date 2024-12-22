@@ -196,4 +196,44 @@ table {
 .footer-button:hover {
     background-color: #6c4280;
 }
- 
+
+@media only screen and (max-device-width: 480px) {
+    main {
+        width: max-content;
+    }
+
+    h2 {
+        width: 300px;
+    }
+
+    .card {
+        width: 300px;
+    }
+
+    .card-toggle {
+        right: 5px;
+    }
+
+    .card.one.open {
+        height: 300px;
+    }
+
+    .card.three.open {
+        height: 800px;
+    }
+
+    .card.five.open {
+        height: 320px;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-center {
+        position: relative;
+        text-align: left;
+        transform: translateX(-90%);
+    }
+}
