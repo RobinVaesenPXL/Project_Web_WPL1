@@ -153,6 +153,10 @@ table {
     margin-left: 60px;
   }
 
+  .mobile-skills-table {
+    display: none;
+  }
+
 .footer {
     display: flex;
     justify-content: space-between;
@@ -200,6 +204,7 @@ table {
 @media only screen and (max-device-width: 480px) {
     main {
         width: max-content;
+        margin-bottom: 50px;
     }
 
     h2 {
@@ -219,11 +224,24 @@ table {
     }
 
     .card.three.open {
-        height: 800px;
+        height: 750px;
     }
 
     .card.five.open {
         height: 320px;
+    }
+
+    .card.three.open .skills-table {
+        display: none;
+    }
+
+    .card.three.open .mobile-skills-table {
+        display: block;
+    }
+
+    .card.three.open .skills-title {
+        margin-top: 20px;
+        font-weight: bold;
     }
 
     .footer {
